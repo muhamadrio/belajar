@@ -14,19 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/belajar', function () {
-    echo"belajar PHP.Tulisan ini ditampilkan dari wandy ";
-});
-Route::get('/belajar1', function () {
-    echo"Hello World guys ";
-});
-Route::get('/belajar2', function () {
-    echo"Hello World wandy ";
-});
-Route::get('/belajar3', function () {
-    echo"hello world guys ";
-});
-
 Route::get('/about', function () {
-    return view('about');
+    $nama = "Rio ramadan";
+    return view('about',["nama"=>$nama]);
+});
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/contact', function () {
+    return view('contact');
 });

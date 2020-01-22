@@ -3,9 +3,8 @@
 @section('title','contact')
 
 @section('container')
-<div class="contact">
-<h1>Hallo </h1> {{$nama}}
-
+<div class="container">
+  <h1>Contact page</h1>
 </div>
 
 @endsection
